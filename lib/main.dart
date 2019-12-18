@@ -1,5 +1,8 @@
 import 'dart:convert';
 import 'dart:ui';
+import 'package:web/Navigation/navigation.dart';
+import 'Navigation/navigation.dart';
+import './Data/about.dart';
 import 'package:flutter/material.dart';
 import './Data/variables.dart' as global;
 import 'package:http/http.dart' as http;
@@ -55,7 +58,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'MamaGang',
+      // title: 'MamaGang',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
@@ -80,6 +83,43 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            Navbar(),
+            // Row(
+            //   mainAxisAlignment: MainAxisAlignment.spaceAround,
+            //   children: <Widget>[
+            //     Text(
+            //       'MamaGang',
+            //       style: TextStyle(fontSize: 40, fontWeight: FontWeight.w600),
+            //     ),
+            //     SizedBox(
+            //       width: 400,
+            //     ),
+            //     Row(
+            //       mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            //       children: <Widget>[
+            //         FlatButton(
+            //           // shape: ,
+            //           splashColor: Colors.blueAccent,
+            //           child: Text('About',
+            //               style: TextStyle(
+            //                   fontSize: 25, fontWeight: FontWeight.w300)),
+            //           onPressed: () {
+            //             Navigator.push(context,
+            //                 MaterialPageRoute(builder: (context) => About()));
+            //           },
+            //         ),
+            //         SizedBox(width: 20),
+            //         FlatButton(
+            //           child: Text('Contact Us',
+            //               style: TextStyle(
+            //                   fontSize: 25, fontWeight: FontWeight.w300)),
+            //           onPressed: () {},
+            //         ),
+            //       ],
+            //     )
+            //   ],
+            // ),
+
             // SizedBox(
             //   child: Text(!global.loading ? global.items[0]['title'] : "mama"),
             // ),
